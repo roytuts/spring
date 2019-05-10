@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<import resource="classpath:spring-config.xml" />
+
+	<!-- Scan the package where Spring Controllers are placed -->
+	<context:component-scan
+		base-package="com.jeejava.spring.mvc.jdbc.controller" />
+
+	<!-- Resolves logical String-based view names to actual View types -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<!-- Where pages are kept -->
+		<property name="prefix" value="/pages/" />
+		<!-- What is the page extension -->
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>
