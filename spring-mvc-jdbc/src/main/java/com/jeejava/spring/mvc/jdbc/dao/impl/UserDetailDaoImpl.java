@@ -20,14 +20,14 @@ public class UserDetailDaoImpl implements UserDetailDao {
 
 	@Transactional
 	public UserDetail getUserDetail(int id) {
-		UserDetail userDetail = (UserDetail) jdbcTemplate.queryForObject("select * from user_details where id = ?",
+		UserDetail userDetail = (UserDetail) jdbcTemplate.queryForObject("select * from user_detail where id = ?",
 				new Object[] { id }, new UserDetailRowMapper());
 		return userDetail;
 	}
 
 	@Transactional
 	public List<UserDetail> getAllUserDetail() {
-		List<UserDetail> userDetail = (List<UserDetail>) jdbcTemplate.query("select * from user_details",
+		List<UserDetail> userDetail = (List<UserDetail>) jdbcTemplate.query("select * from user_detail",
 				new UserDetailRowMapper());
 		return userDetail;
 	}
@@ -35,7 +35,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 	@Transactional
 	public int addUserDetail(UserDetail userDetail) {
 		SimpleJdbcInsert simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate);
-		simpleJdbcInsert.withTableName("user_details").usingGeneratedKeyColumns("id");
+		simpleJdbcInsert.withTableName("user_detail").usingGeneratedKeyColumns("id");
 		Map<String, Object> parameters = new HashMap<String, Object>(4);
 		parameters.put("first_name", userDetail.getFirstName());
 		parameters.put("last_name", userDetail.getLastName());
@@ -47,7 +47,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 
 	@Transactional
 	public int updateUserDetail(UserDetail userDetail) {
-		String sql = "update user_details set first_name = ?, last_name = ?, email = ?, dob = ? where id = ?";
+		String sql = "update user_detail set first_name = ?, last_name = ?, email = ?, dob = ? where id = ?";
 		int resp = jdbcTemplate.update(sql, new Object[] { userDetail.getFirstName(), userDetail.getLastName(),
 				userDetail.getEmail(), userDetail.getDob(), userDetail.getId() });
 		return resp;
@@ -56,7 +56,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 
 	@Transactional
 	public int deleteUserDetail(int id) {
-		int resp = jdbcTemplate.update("delete from user_details where id = ?", id);
+		int resp = jdbcTemplate.update("delete from user_detail where id = ?", id);
 		return resp;
 	}
 
