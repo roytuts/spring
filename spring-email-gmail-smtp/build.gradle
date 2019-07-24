@@ -1,0 +1,31 @@
+buildscript {
+	ext {
+		springVersion = '5.1.7.RELEASE'
+	}
+    repositories {
+    	mavenLocal()
+    	mavenCentral()
+    }
+    dependencies {
+    	classpath("io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'io.spring.dependency-management'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+	compile("org.springframework:spring-core:${springVersion}")
+	compile("org.springframework:spring-context-support:${springVersion}")
+	compile('javax.mail:mail:1.4.7')
+	testCompile('junit:junit:4.12')
+}
