@@ -18,7 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-mainClassName = 'com.jeejava.spring.tx.Application'
+mainClassName = 'com.roytuts.spring.tx.Application'
 jar {
     baseName = 'spring-declarative-transaction-management'
     version =  '0.0.1'

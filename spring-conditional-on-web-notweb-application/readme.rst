@@ -1,1 +1,1 @@
-You can go through the tutorial https://www.jeejava.com/spring-conditionalonwebapplication-and-conditionalonnotwebapplication/
+You can go through the tutorial https://www.roytuts.com/spring-conditionalonwebapplication-and-conditionalonnotwebapplication/

@@ -36,10 +36,10 @@
 
 	<!-- service -->
 	<bean id="userDetailService"
-		class="com.jeejava.spring.mvc.jdbc.service.impl.UserDetailServiceImpl" />
+		class="com.roytuts.spring.mvc.jdbc.service.impl.UserDetailServiceImpl" />
 
 	<!-- dao -->
 	<bean id="userDetailDao"
-		class="com.jeejava.spring.mvc.jdbc.dao.impl.UserDetailDaoImpl" />
+		class="com.roytuts.spring.mvc.jdbc.dao.impl.UserDetailDaoImpl" />
 
 </beans>

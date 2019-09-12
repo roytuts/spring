@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.jeejava</groupId>
+	<groupId>com.roytuts</groupId>
 	<artifactId>spring-google-chart</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>

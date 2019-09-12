@@ -1,11 +1,11 @@
-package com.jeejava.spring.email;
+package com.roytuts.spring.email;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.jeejava.spring.mail.config.SpringEmailConfig;
-import com.jeejava.spring.mail.service.EmailService;
+import com.roytuts.spring.mail.config.SpringEmailConfig;
+import com.roytuts.spring.mail.service.EmailService;
 
 public class EmailServiceTest {
 

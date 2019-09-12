@@ -1,1 +1,1 @@
-You can go through the tutorial https://www.jeejava.com/spring-conditionalonclass-and-conditionalonmissingclass/
+You can go through the tutorial https://www.roytuts.com/spring-conditionalonclass-and-conditionalonmissingclass/

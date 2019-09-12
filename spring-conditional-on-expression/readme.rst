@@ -1,1 +1,1 @@
-You can go through the tutorial https://www.jeejava.com/spring-conditionalonexpression-example/
+You can go through the tutorial https://www.roytuts.com/spring-conditionalonexpression-example/

@@ -13,7 +13,7 @@
 
 	<!-- Scan the package where Spring Controllers are placed -->
 	<context:component-scan
-		base-package="com.jeejava.spring.mvc.jdbc.controller" />
+		base-package="com.roytuts.spring.mvc.jdbc.controller" />
 
 	<!-- Resolves logical String-based view names to actual View types -->
 	<bean id="viewResolver"

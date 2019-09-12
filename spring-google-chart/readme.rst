@@ -1,1 +1,1 @@
-You can read tutorial https://www.jeejava.com/google-chart-using-spring/
+You can read tutorial https://www.roytuts.com/google-chart-using-spring/

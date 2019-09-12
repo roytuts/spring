@@ -1,1 +1,1 @@
-You can read tutorial https://www.jeejava.com/spring-conditionalonproperty-example/
+You can read tutorial https://www.roytuts.com/spring-conditionalonproperty-example/

@@ -1,4 +1,4 @@
-package com.jeejava.junit.value.service;
+package com.roytuts.junit.value.service;
 
 import org.junit.Before;
 import org.junit.Test;
