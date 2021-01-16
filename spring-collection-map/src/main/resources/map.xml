@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="springCollectionMap"
+		class="com.roytuts.spring.collection.map.RoytutsInfoMap">
+		<property name="map">
+			<map>
+				<entry key="site" value="https://roytuts.com" />
+				<entry key="author" value="Soumitra" />
+				<entry key="about" value="https://roytuts.com/about" />
+				<entry key="facebook"
+					value="https://www.facebook.com/roytuts2014" />
+				<entry key="twitter" value="https://twitter.com/roytuts" />
+				<entry key="youtube"
+					value="https://www.youtube.com/channel/UCMysotNzptWegWBSY9lox_g" />
+				<entry key="ello" value="https://ello.co/soumitrajuster" />
+				<entry key="linkedin"
+					value="https://www.linkedin.com/in/soumitra-sarkar-80ba0328/" />
+			</map>
+		</property>
+	</bean>
+</beans>
