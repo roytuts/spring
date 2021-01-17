@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.roytuts.spring.collection.props.RoytutsInfoProps">
+		<property name="props">
+			<props>
+				<prop key="site">https://roytuts.com</prop>
+				<prop key="author">Soumitra</prop>
+				<prop key="about">https://roytuts.com/about</prop>
+				<prop key="facebook">https://www.facebook.com/roytuts2014</prop>
+				<prop key="twitter">https://twitter.com/roytuts</prop>
+				<prop key="youtube">https://www.youtube.com/channel/UCMysotNzptWegWBSY9lox_g
+				</prop>
+				<prop key="ello">https://ello.co/soumitrajuster</prop>
+				<prop key="linkedin">https://www.linkedin.com/in/soumitra-sarkar-80ba0328/
+				</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
