@@ -1,1 +1,0 @@
-You can read tutorial https://roytuts.com/compound-property-names-in-spring/
