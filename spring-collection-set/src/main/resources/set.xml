@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="springCollectionList"
+		class="com.roytuts.spring.collection.set.SpringCollectionSet">
+		<property name="set">
+			<set>
+				<value>java</value>
+				<value>spring</value>
+				<value>rest</value>
+				<value>roytuts2014@gmail.com</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>
