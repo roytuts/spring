@@ -21,6 +21,9 @@ public class SpringCollectionListApp implements CommandLineRunner {
 
 	@Value("#{'${roytuts.list}'.split(',')}")
 	private List<String> strList2;
+	
+	@Value("#{'java,spring,rest,microservice,roytuts2014@gmail.com'.split(',')}")
+	private List<String> strList3;
 
 	@Autowired
 	private RoytutsList roytutsList;
@@ -34,19 +37,23 @@ public class SpringCollectionListApp implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Array of Strings: " + Arrays.toString(strArray));
+		System.out.println("Array of Strings (strArray): " + Arrays.toString(strArray));
 
 		System.out.println();
 
-		System.out.println("List of Strings: " + Arrays.toString(strList.toArray()));
+		System.out.println("List of Strings (strList): " + Arrays.toString(strList.toArray()));
 
 		System.out.println();
 
-		System.out.println("List of Strings2: " + Arrays.toString(strList2.toArray()));
+		System.out.println("List of Strings (strList2): " + Arrays.toString(strList2.toArray()));
+
+		System.out.println();
+		
+		System.out.println("List of Strings (strList3): " + Arrays.toString(strList3.toArray()));
 
 		System.out.println();
 
-		System.out.println("List of Configurable Strings: " + Arrays.toString(roytutsList.getList().toArray()));
+		System.out.println("List of Configurable Strings (roytutsList): " + Arrays.toString(roytutsList.getList().toArray()));
 
 		System.out.println();
 
