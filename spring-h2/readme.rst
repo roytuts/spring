@@ -1,1 +1,1 @@
-You can read tutorial https://www.roytuts.com/integrate-h2-in-memory-database-with-spring/
+Please follow the tutorial https://roytuts.com/integrate-h2-in-memory-database-with-spring/
