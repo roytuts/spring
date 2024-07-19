@@ -1,1 +1,1 @@
-You can go through the tutorial https://www.roytuts.com/sending-mail-using-spring-and-gmail-smtp/
+Please follow the tutorial https://roytuts.com/sending-mail-using-spring-and-gmail-smtp/
